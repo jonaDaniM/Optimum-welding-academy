@@ -1,16 +1,39 @@
 export default function About() {
   return (
     <section id="about" className="section border-t border-white/10">
-      <div className="container grid md:grid-cols-3 gap-8">
-        <div>
-          <h2 className="font-display text-3xl">About</h2>
-          <p className="mt-2 text-white/80">Safety-first, hands-on training in a real shop environment.</p>
+      <div className="container">
+        <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div>
+            <h2 className="font-display text-3xl">About</h2>
+            <p className="mt-2 text-white/80">Safety-first, hands-on training in a real shop environment.</p>
+          </div>
+          <div className="grid grid-cols-3 gap-4">
+            <div className="text-center">
+              <img 
+                src="/Optimum-welding-academy/pipe.jpg" 
+                alt="Welding pipe work" 
+                className="w-full h-32 object-cover rounded-lg border border-white/10"
+              />
+              <p className="mt-2 text-sm text-white/70">Safety & PPE</p>
+            </div>
+            <div className="text-center">
+              <img 
+                src="/Optimum-welding-academy/tools.png" 
+                alt="Welding tools and equipment" 
+                className="w-full h-32 object-cover rounded-lg border border-white/10"
+              />
+              <p className="mt-2 text-sm text-white/70">Shop Time</p>
+            </div>
+            <div className="text-center">
+              <img 
+                src="/Optimum-welding-academy/structural.jpg" 
+                alt="Structural welding work" 
+                className="w-full h-32 object-cover rounded-lg border border-white/10"
+              />
+              <p className="mt-2 text-sm text-white/70">MIG / TIG / Stick</p>
+            </div>
+          </div>
         </div>
-        <ul className="md:col-span-2 grid sm:grid-cols-3 gap-4">
-          <li className="p-4 bg-white/5 border border-white/10 rounded">Safety & PPE</li>
-          <li className="p-4 bg-white/5 border border-white/10 rounded">Hours of shop time</li>
-          <li className="p-4 bg-white/5 border border-white/10 rounded">MIG / TIG / Stick</li>
-        </ul>
       </div>
     </section>
   );
