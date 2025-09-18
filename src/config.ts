@@ -1,7 +1,7 @@
 export const SITE = {
   academyName: 'Optimum Welding Academy',
-  phoneHuman: '713-419-4148',
-  phoneE164: '+17134194148',
+  phoneHuman: '713-437-2364',
+  phoneE164: '+17134372364',
   priceUsd: 6000,
 };
 
