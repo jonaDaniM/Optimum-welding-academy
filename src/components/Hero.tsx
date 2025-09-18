@@ -33,9 +33,9 @@ function TorchWithSparks() {
         <rect x="120" y="100" width="30" height="8" fill="#9CA3AF"/>
         <rect x="150" y="100" width="18" height="8" fill="#F59E0B"/>
       </svg>
-      <img src={new URL('/spark.svg', import.meta.url).toString()} className="absolute -top-3 -right-3 w-5 opacity-0 group-hover:opacity-100 transition" alt="spark" />
-      <img src={new URL('/spark.svg', import.meta.url).toString()} className="absolute top-6 -right-6 w-4 opacity-0 group-hover:opacity-100 transition delay-100" alt="spark" />
-      <img src={new URL('/spark.svg', import.meta.url).toString()} className="absolute -top-6 right-6 w-4 opacity-0 group-hover:opacity-100 transition delay-200" alt="spark" />
+      <img src="/spark.svg" className="absolute -top-3 -right-3 w-5 opacity-0 group-hover:opacity-100 transition" alt="spark" />
+      <img src="/spark.svg" className="absolute top-6 -right-6 w-4 opacity-0 group-hover:opacity-100 transition delay-100" alt="spark" />
+      <img src="/spark.svg" className="absolute -top-6 right-6 w-4 opacity-0 group-hover:opacity-100 transition delay-200" alt="spark" />
     </div>
   );
 }

@@ -5,7 +5,7 @@ export default function Nav() {
     <header className="sticky top-0 z-40 bg-graphite/80 backdrop-blur border-b border-white/10">
       <div className="container flex items-center justify-between py-3">
         <a href="#top" className="flex items-center gap-3">
-          <img src="/logo.png" alt="Logo" className="w-9 h-9" />
+          <img src="/logo.svg" alt="Logo" className="w-9 h-9" />
           <span className="font-display text-xl tracking-wide">{SITE.academyName}</span>
         </a>
         <nav className="flex items-center gap-4 text-sm">
