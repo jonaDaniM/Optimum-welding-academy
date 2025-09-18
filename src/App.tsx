@@ -38,7 +38,7 @@ function App() {
       <footer className="section border-t border-white/10">
         <div className="container flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white/70">
           <div className="flex items-center gap-3">
-            <img src="/logo.svg" alt="Logo" className="w-8 h-8" />
+            <img src="/Optimum-welding-academy/logo.svg" alt="Logo" className="w-8 h-8" />
             <span>© {new Date().getFullYear()} Optimum Welding Academy</span>
           </div>
           <div className="flex items-center gap-6">
