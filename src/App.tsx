@@ -36,14 +36,14 @@ function App() {
         <LeadForm />
       </main>
       <footer className="section border-t border-white/10">
-        <div className="container flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white/70">
+        <div className="container flex flex-col lg:flex-row items-center justify-between gap-4 text-sm text-white/70">
           <div className="flex items-center gap-3">
-            <img src="/Optimum-welding-academy/logo.PNG" alt="Logo" className="w-8 h-8" />
-            <span>© {new Date().getFullYear()} Optimum Welding Academy</span>
+            <img src="/Optimum-welding-academy/logo.PNG" alt="Logo" className="w-8 h-8 flex-shrink-0" />
+            <span className="text-center lg:text-left">© {new Date().getFullYear()} Optimum Welding Academy</span>
           </div>
-          <div className="flex items-center gap-6">
-            <a className="hover:text-white" href="tel:+17134194148">Call: 713-419-4148</a>
-            <span>1234 Shop Rd, Houston, TX</span>
+          <div className="flex flex-col sm:flex-row items-center gap-4 lg:gap-6">
+            <a className="hover:text-white text-center" href="tel:+17134194148">Call: 713-419-4148</a>
+            <span className="text-center">1234 Shop Rd, Houston, TX</span>
             <div className="flex gap-3">
               <a aria-label="WhatsApp" className="hover:opacity-100 opacity-80" href="https://wa.me/17134194148" target="_blank" rel="noreferrer">WA</a>
               <a aria-label="Instagram" className="hover:opacity-100 opacity-80" href="#">IG</a>

@@ -3,19 +3,19 @@ import { motion } from 'framer-motion';
 export default function Hero() {
   return (
     <section id="top" className="section relative overflow-hidden">
-      <div className="container grid md:grid-cols-2 items-center gap-10">
+      <div className="container grid lg:grid-cols-2 items-center gap-8 lg:gap-10">
         <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-          <h1 className="font-display text-4xl md:text-6xl font-bold leading-tight">
+          <h1 className="font-display text-3xl sm:text-4xl lg:text-6xl font-bold leading-tight">
             Forge Your Future. <span className="text-spark">Master the Arc.</span>
           </h1>
-          <p className="mt-4 text-white/80 text-lg">3-Month hands-on welding program designed for real-world work.</p>
-          <p className="mt-2 text-white/70">Small cohorts • MIG / TIG / Stick • Safety-first shop</p>
-          <div className="mt-6 flex flex-wrap gap-3">
-            <a href="#apply" className="btn btn-danger">Apply / Reserve Spot</a>
-            <a href="tel:+17134194148" className="btn btn-primary">Call 713-419-4148</a>
+          <p className="mt-4 text-white/80 text-base sm:text-lg">3-Month hands-on welding program designed for real-world work.</p>
+          <p className="mt-2 text-white/70 text-sm sm:text-base">Small cohorts • MIG / TIG / Stick • Safety-first shop</p>
+          <div className="mt-6 flex flex-col sm:flex-row gap-3">
+            <a href="#apply" className="btn btn-danger text-center">Apply / Reserve Spot</a>
+            <a href="tel:+17134194148" className="btn btn-primary text-center">Call 713-419-4148</a>
           </div>
         </motion.div>
-        <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.1 }} className="relative">
+        <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.1 }} className="relative order-first lg:order-last">
           <div className="w-full aspect-video rounded-lg overflow-hidden border border-white/10">
             <img 
               src="/Optimum-welding-academy/hero-image.jpg" 
