@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --grain-url: url('/grain.png');
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  @apply bg-graphite text-white font-sans;
+  background-image: theme('backgroundImage.steel-gradient');
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.grain-overlay::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: var(--grain-url);
+  background-size: 300px 300px;
+  opacity: 0.06;
+  mix-blend-mode: overlay;
+}
+
+.focus-ring:focus {
+  outline: 2px solid theme('colors.spark');
+  outline-offset: 2px;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center px-5 py-3 rounded-md font-semibold transition-colors focus-ring;
+}
+.btn-primary {
+  @apply bg-blueDeep hover:bg-blue-800 text-white;
+}
+.btn-danger {
+  @apply bg-weldingRed hover:bg-red-700 text-white;
+}
+.btn-outline {
+  @apply border border-white/20 hover:bg-white/10;
+}
+
+.container {
+  @apply max-w-6xl mx-auto px-4;
+}
+
+.section {
+  @apply py-16 md:py-24;
+}
+
+
