@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --grain-url: url('/grain.png');
+  --grain-url: url('/grain.png'); /* optional; will 404 gracefully */
 }
 
 html, body, #root {

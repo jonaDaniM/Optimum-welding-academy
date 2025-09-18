@@ -9,6 +9,10 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
+  // Ensure correct asset paths when hosted at /<repo>/ on GitHub Pages
+  base: process.env.GITHUB_ACTIONS === 'true'
+    ? `/${(process.env.GITHUB_REPOSITORY || '').split('/')[1] || ''}/`
+    : '/',
 });
 
 
