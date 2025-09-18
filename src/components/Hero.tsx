@@ -16,8 +16,12 @@ export default function Hero() {
           </div>
         </motion.div>
         <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.1 }} className="relative">
-          <div className="w-full aspect-square rounded-lg bg-white/5 border border-white/10 flex items-center justify-center">
-            <TorchWithSparks />
+          <div className="w-full aspect-video rounded-lg overflow-hidden border border-white/10">
+            <img 
+              src="/Optimum-welding-academy/hero-image.jpg" 
+              alt="Welder in action with sparks" 
+              className="w-full h-full object-cover"
+            />
           </div>
         </motion.div>
       </div>
