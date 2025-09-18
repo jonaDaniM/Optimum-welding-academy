@@ -19,7 +19,15 @@ jobs:
         with:
           node-version: '20'
           cache: 'npm'
-      - run: npm ci
+      - name: Install dependencies
+        run: |
+          if [ -f package-lock.json ] || [ -f npm-shrinkwrap.json ] || [ -f yarn.lock ]; then
+            echo "Lockfile found; running npm ci"
+            npm ci
+          else
+            echo "No lockfile; running npm install"
+            npm install --no-audit --no-fund
+          fi
       - run: npm run build
       - uses: actions/upload-pages-artifact@v3
         with:
