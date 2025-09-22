@@ -1,12 +1,12 @@
 import { useState } from 'react';
 
 const faqs = [
-  { q: 'How long is the program?', a: 'Three months with hands-on shop time.' },
-  { q: 'What welding types are covered?', a: 'MIG, TIG, and Stick welding.' },
-  { q: 'Do I need experience?', a: 'No, we welcome beginners.' },
+  { q: 'How long is the program?', a: 'Four months with hands-on shop time.' },
+  { q: 'What welding types are covered?', a: 'TIG and Stick welding - the most in-demand skills in the industry.' },
+  { q: 'Do I need experience?', a: 'No, we welcome beginners and start from the basics.' },
   { q: 'Is safety gear provided?', a: 'We guide purchases; some gear available on site.' },
-  { q: 'Will I be job-ready?', a: 'We focus on practical, jobsite-ready skills.' },
-  { q: 'Where are you located?', a: 'Houston, TX area. Address provided upon enrollment.' },
+  { q: 'Will I be job-ready?', a: 'We focus on practical, jobsite-ready TIG and Stick welding skills.' },
+  { q: 'Where are you located?', a: 'Pasadena, TX. Classes run 5:30 PM - 9:00 PM.' },
 ];
 
 export default function FAQ() {

@@ -30,7 +30,7 @@ export default function About() {
                 alt="Structural welding work" 
                 className="w-full h-32 object-cover rounded-lg border border-white/10 mx-auto"
               />
-              <p className="mt-2 text-sm text-white/70">MIG / TIG / Stick</p>
+              <p className="mt-2 text-sm text-white/70">TIG & Stick</p>
             </div>
           </div>
         </div>
