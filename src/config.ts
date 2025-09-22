@@ -2,7 +2,13 @@ export const SITE = {
   academyName: 'Optimum Welding Academy',
   phoneHuman: '713-419-4148',
   phoneE164: '+17134194148',
-  priceUsd: 6000,
+  priceUsd: 4999,
+  downPayment: 499,
+  weeklyPayment: 250,
+  referralPrice: 4499,
+  courseDuration: '4 months',
+  classSchedule: '5:30 PM - 9:00 PM',
+  location: 'Pasadena, TX',
 };
 
 export const GOOGLE_FORM = {

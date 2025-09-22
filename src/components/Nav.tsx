@@ -12,6 +12,7 @@ export default function Nav() {
           <a href="#about" className="hover:text-spark">About</a>
           <a href="#program" className="hover:text-spark">Program</a>
           <a href="#pricing" className="hover:text-spark">Pricing</a>
+          <a href="#promotion" className="hover:text-spark">Special</a>
           <a href="#faq" className="hover:text-spark">FAQ</a>
           <a href="#apply" className="btn btn-danger">Apply</a>
           <a href={`tel:${SITE.phoneE164}`} className="btn btn-primary">Call {SITE.phoneHuman}</a>

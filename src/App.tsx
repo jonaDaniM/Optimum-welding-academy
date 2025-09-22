@@ -5,6 +5,7 @@ import About from './components/About';
 import Instructor from './components/Instructor';
 import Program from './components/Program';
 import Pricing from './components/Pricing';
+import Promotion from './components/Promotion';
 import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
 import LeadForm from './components/LeadForm';
@@ -31,6 +32,7 @@ function App() {
         <Instructor />
         <Program />
         <Pricing />
+        <Promotion />
         <Testimonials />
         <FAQ />
         <LeadForm />
@@ -43,7 +45,7 @@ function App() {
           </div>
           <div className="flex flex-col sm:flex-row items-center gap-4 lg:gap-6">
             <a className="hover:text-white text-center" href="tel:+17134194148">Call: 713-419-4148</a>
-            <span className="text-center">1234 Shop Rd, Houston, TX</span>
+            <span className="text-center">Pasadena, TX</span>
             <div className="flex gap-3">
               <a aria-label="WhatsApp" className="hover:opacity-100 opacity-80" href="https://wa.me/17134194148" target="_blank" rel="noreferrer">WA</a>
               <a aria-label="Instagram" className="hover:opacity-100 opacity-80" href="#">IG</a>
