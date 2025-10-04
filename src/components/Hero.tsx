@@ -8,8 +8,8 @@ export default function Hero() {
           <h1 className="font-display text-3xl sm:text-4xl lg:text-6xl font-bold leading-tight">
             Forge Your Future. <span className="text-spark">Master the Arc.</span>
           </h1>
-          <p className="mt-4 text-white/80 text-base sm:text-lg">4-Month hands-on welding program designed for real-world work.</p>
-          <p className="mt-2 text-white/70 text-sm sm:text-base">Small cohorts • TIG & Stick Welding • Safety-first shop</p>
+          <p className="mt-4 text-white/80 text-base sm:text-lg">Hands-on welding programs designed for real-world work.</p>
+          <p className="mt-2 text-white/70 text-sm sm:text-base">Choose your path: 2-month TIG/Stick courses or 4-month combo • Small cohorts • Safety-first shop</p>
           <div className="mt-6 flex flex-col sm:flex-row gap-3">
             <a href="#apply" className="btn btn-danger text-center">Apply / Reserve Spot</a>
             <a href="tel:+17134194148" className="btn btn-primary text-center">Call 713-419-4148</a>

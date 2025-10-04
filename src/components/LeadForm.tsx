@@ -12,6 +12,7 @@ type FormValues = {
   phone: string;
   email: string;
   experience: 'New' | 'Some experience' | 'Experienced';
+  courseInterest: 'Combo Course (4 months)' | 'Stick Course (2 months)' | 'TIG Course (2 months)' | 'Not sure';
   startMonth: string;
   hearAbout: 'Friend' | 'Social' | 'Search' | 'Flyer' | 'Other';
   message?: string;
@@ -27,7 +28,7 @@ export default function LeadForm() {
   const [submitted, setSubmitted] = useState(false);
 
   const { register, handleSubmit, setValue, watch, formState: { errors } } = useForm<FormValues>({
-    defaultValues: { experience: 'New', hearAbout: 'Friend' }
+    defaultValues: { experience: 'New', courseInterest: 'Combo Course (4 months)', hearAbout: 'Friend' }
   });
   const phoneVal = watch('phone');
 
@@ -62,6 +63,7 @@ export default function LeadForm() {
     append(GOOGLE_FORM.entries.phone, data.phone);
     append(GOOGLE_FORM.entries.email, data.email);
     append(GOOGLE_FORM.entries.experience, data.experience);
+    append(GOOGLE_FORM.entries.courseInterest, data.courseInterest);
     append(GOOGLE_FORM.entries.startMonth, data.startMonth);
     append(GOOGLE_FORM.entries.hearAbout, data.hearAbout);
     append(GOOGLE_FORM.entries.message, data.message || '');
@@ -110,6 +112,12 @@ export default function LeadForm() {
           <Field label="Experience Level">
             <select id="experience" className="w-full p-3 rounded bg-white/5 border border-white/10" {...register('experience')}> 
               {['New','Some experience','Experienced'].map((o) => <option key={o} value={o}>{o}</option>)}
+            </select>
+          </Field>
+
+          <Field label="Course Interest">
+            <select id="course-interest" className="w-full p-3 rounded bg-white/5 border border-white/10" {...register('courseInterest')}> 
+              {['Combo Course (4 months)','Stick Course (2 months)','TIG Course (2 months)','Not sure'].map((o) => <option key={o} value={o}>{o}</option>)}
             </select>
           </Field>
 
