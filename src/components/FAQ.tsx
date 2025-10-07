@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 const faqs = [
-  { q: 'How long is the program?', a: 'Four months with hands-on shop time.' },
+  { q: 'How long are the programs?', a: 'Individual courses are 2 months each (TIG or Stick), or take the 4-month combo course for both.' },
   { q: 'What welding types are covered?', a: 'TIG and Stick welding - the most in-demand skills in the industry.' },
   { q: 'Do I need experience?', a: 'No, we welcome beginners and start from the basics.' },
   { q: 'Is safety gear provided?', a: 'We guide purchases; some gear available on site.' },

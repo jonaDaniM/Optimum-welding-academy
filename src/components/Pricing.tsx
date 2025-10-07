@@ -9,7 +9,8 @@ export default function Pricing() {
           <div className="p-6 bg-white/5 border border-white/10 rounded">
             <h3 className="font-semibold text-spark mb-2">Stick Welding Course</h3>
             <div className="text-3xl font-bold text-white">${SITE.stickPrice.toLocaleString()}</div>
-            <p className="text-white/70 mt-2">2 Months • Months 1-2</p>
+            <p className="text-white/70 mt-2 text-center font-semibold">2 MONTHS ONLY</p>
+            <p className="text-white/60 mt-1 text-sm text-center">Months 1-2 of program</p>
             <ul className="mt-4 space-y-2 text-white/80 text-sm">
               <li>• Stick basics & fundamentals</li>
               <li>• Advanced stick, plate and pipe</li>
@@ -33,7 +34,8 @@ export default function Pricing() {
           <div className="p-6 bg-white/5 border border-white/10 rounded">
             <h3 className="font-semibold text-spark mb-2">TIG Welding Course</h3>
             <div className="text-3xl font-bold text-white">${SITE.tigPrice.toLocaleString()}</div>
-            <p className="text-white/70 mt-2">2 Months • Months 3-4</p>
+            <p className="text-white/70 mt-2 text-center font-semibold">2 MONTHS ONLY</p>
+            <p className="text-white/60 mt-1 text-sm text-center">Months 3-4 of program</p>
             <ul className="mt-4 space-y-2 text-white/80 text-sm">
               <li>• TIG basics and fundamentals</li>
               <li>• Advanced TIG on pipe</li>
@@ -57,7 +59,7 @@ export default function Pricing() {
             <div className="text-sm text-white/70">
               <strong>Classes:</strong> {SITE.classSchedule}<br/>
               <strong>Location:</strong> {SITE.location}<br/>
-              <strong>Duration:</strong> Choose your path - 2 or 4 months
+              <strong>Duration:</strong> 2-month individual courses or 4-month combo
             </div>
           </div>
         </div>
