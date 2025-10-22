@@ -12,7 +12,7 @@ type FormValues = {
   phone: string;
   email: string;
   experience: 'New' | 'Some experience' | 'Experienced';
-  courseInterest: 'Combo Course (4 months)' | 'Stick Course (2 months)' | 'TIG Course (2 months)' | 'Not sure';
+  courseInterest: 'Combo Course (4 months)' | 'Stick Course (6 weeks)' | 'TIG Course (2 months)' | 'Not sure';
   startMonth: string;
   hearAbout: 'Friend' | 'Social' | 'Search' | 'Flyer' | 'Other';
   message?: string;
@@ -117,7 +117,7 @@ export default function LeadForm() {
 
           <Field label="Course Interest">
             <select id="course-interest" className="w-full p-3 rounded bg-white/5 border border-white/10" {...register('courseInterest')}> 
-              {['Combo Course (4 months)','Stick Course (2 months)','TIG Course (2 months)','Not sure'].map((o) => <option key={o} value={o}>{o}</option>)}
+              {['Combo Course (4 months)','Stick Course (6 weeks)','TIG Course (2 months)','Not sure'].map((o) => <option key={o} value={o}>{o}</option>)}
             </select>
           </Field>
 

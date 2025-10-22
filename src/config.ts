@@ -5,6 +5,7 @@ export const SITE = {
   comboPrice: 4999,
   tigPrice: 2850,
   stickPrice: 2850,
+  stickDuration: '6 weeks',
   downPayment: 499,
   weeklyPayment: 250,
   referralPrice: 4499,
